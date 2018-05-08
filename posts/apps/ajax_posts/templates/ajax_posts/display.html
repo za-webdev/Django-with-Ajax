@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Posts</title>
+	<style>
+		/*.main{
+			display: flex;
+
+		}*/
+		div{
+			border: purple 1px solid;
+			margin: 20px;
+
+
+		}
+	</style>
+</head>
+<body>
+		<div class="main">
+			{%for user in posts%}
+				<div>{{user.content}}</div>
+			{%endfor%}
+		</div>
+
+</body>
+</html>
